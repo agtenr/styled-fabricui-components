@@ -1,0 +1,23 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.componentSection {
+  display: block;
+  margin: 10px;
+
+  :global{
+    .ms-Checkbox-text {
+      color: purple;
+    }
+    .ms-Button {
+      background-color: black;
+    }
+    .ms-Toggle-background {
+      background-color: violet;
+    }
+    .ms-Toggle-background[aria-checked="true"] {
+      background-color: green;
+    }
+  }
+}
+
+

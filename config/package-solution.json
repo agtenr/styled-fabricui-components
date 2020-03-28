@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "styled-fabricui-components-client-side-solution",
+    "id": "5f581c9e-a643-4a48-9859-1f1569c0dddf",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/styled-fabricui-components.sppkg"
+  }
+}

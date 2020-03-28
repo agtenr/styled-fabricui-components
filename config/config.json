@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "globally-styled-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/globallyStyled/GloballyStyledWebPart.js",
+          "manifest": "./src/webparts/globallyStyled/GloballyStyledWebPart.manifest.json"
+        }
+      ]
+    },
+    "class-name-styled-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/classNameStyled/ClassNameStyledWebPart.js",
+          "manifest": "./src/webparts/classNameStyled/ClassNameStyledWebPart.manifest.json"
+        }
+      ]
+    },
+    "function-based-styled-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/functionBasedStyled/FunctionBasedStyledWebPart.js",
+          "manifest": "./src/webparts/functionBasedStyled/FunctionBasedStyledWebPart.manifest.json"
+        }
+      ]
+    },
+    "component-catalog-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/componentCatalog/ComponentCatalogWebPart.js",
+          "manifest": "./src/webparts/componentCatalog/ComponentCatalogWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "GloballyStyledWebPartStrings": "lib/webparts/globallyStyled/loc/{locale}.js",
+    "ClassNameStyledWebPartStrings": "lib/webparts/classNameStyled/loc/{locale}.js",
+    "FunctionBasedStyledWebPartStrings": "lib/webparts/functionBasedStyled/loc/{locale}.js",
+    "ComponentCatalogWebPartStrings": "lib/webparts/componentCatalog/loc/{locale}.js"
+  }
+}

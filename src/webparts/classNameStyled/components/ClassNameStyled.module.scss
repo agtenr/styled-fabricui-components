@@ -1,0 +1,29 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.componentSection {
+  display: block;
+  margin: 10px;
+
+  .myCustomButton {
+    background-color: black;
+  }
+
+  .myCustomCheckbox {
+    > label {
+      > span {
+        color: purple;
+      }
+    }
+  }
+
+  .myCustomToggle {
+    > div {
+      > button {
+        background-color: violet;
+      }
+      > button[aria-checked="true"] {
+        background-color: green;
+      }
+    }
+  }
+}
