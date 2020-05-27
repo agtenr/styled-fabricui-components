@@ -33,6 +33,22 @@
           "manifest": "./src/webparts/componentCatalog/ComponentCatalogWebPart.manifest.json"
         }
       ]
+    },
+    "beer-component-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/beerComponent/BeerComponentWebPart.js",
+          "manifest": "./src/webparts/beerComponent/BeerComponentWebPart.manifest.json"
+        }
+      ]
+    },
+    "styleable-beer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/styleableBeer/StyleableBeerWebPart.js",
+          "manifest": "./src/webparts/styleableBeer/StyleableBeerWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -40,6 +56,8 @@
     "GloballyStyledWebPartStrings": "lib/webparts/globallyStyled/loc/{locale}.js",
     "ClassNameStyledWebPartStrings": "lib/webparts/classNameStyled/loc/{locale}.js",
     "FunctionBasedStyledWebPartStrings": "lib/webparts/functionBasedStyled/loc/{locale}.js",
-    "ComponentCatalogWebPartStrings": "lib/webparts/componentCatalog/loc/{locale}.js"
+    "ComponentCatalogWebPartStrings": "lib/webparts/componentCatalog/loc/{locale}.js",
+    "BeerComponentWebPartStrings": "lib/webparts/beerComponent/loc/{locale}.js",
+    "StyleableBeerWebPartStrings": "lib/webparts/styleableBeer/loc/{locale}.js"
   }
 }
