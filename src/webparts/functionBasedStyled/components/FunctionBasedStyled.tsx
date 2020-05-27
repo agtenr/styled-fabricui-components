@@ -9,7 +9,7 @@ export default class FunctionBasedStyled extends React.Component<IFunctionBasedS
     const buttonStyles = (): IButtonStyles => {
       const btnStyles: IButtonStyles = {
         root: { backgroundColor: "black"},
-        rootHovered: { backgroundColor: "blue"}
+        rootHovered: { backgroundColor: "green"},
       };
       return btnStyles;
     };

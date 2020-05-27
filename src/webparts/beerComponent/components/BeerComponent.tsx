@@ -22,6 +22,8 @@ export default class BeerComponent extends React.Component<IBeerComponentProps, 
           </div>
           <div className={styles.beerButton}>
             <PrimaryButton text={"Take a sip"} onClick={() => this.setState({sipsTaken: this.state.sipsTaken + 1})}/>
+            <PrimaryButton text={"Refill"} onClick={() => this.setState({sipsTaken: 0})}/>
+            <PrimaryButton text={"Ad fundum"} onClick={() => this.setState({sipsTaken: 5})}/>
           </div>
         </div>
       </div>

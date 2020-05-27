@@ -21,19 +21,21 @@ export default class StyleableBeer extends React.Component<IStyleableBeerProps, 
         <div className={ styles.container }>
         <div className={styles.beerContainer}>
             <Beer sipsTaken={this.state.sipsTaken} />
-            {/* <Beer sipsTaken={this.state.sipsTaken} /> */}
+            <Beer sipsTaken={this.state.sipsTaken} styles={this.darkBeerStyles} />
           </div>
           <div className={styles.beerButton}>
             <PrimaryButton text={"Take a sip"} onClick={() => this.setState({sipsTaken: this.state.sipsTaken + 1})}/>
+            <PrimaryButton text={"Refill"} onClick={() => this.setState({sipsTaken: 0})}/>
+            <PrimaryButton text={"Ad fundum"} onClick={() => this.setState({sipsTaken: 5})}/>
           </div>
         </div>
       </div>
     );
   }
 
-  // private darkBeerStyles = (props: IBeerStyleProps): IBeerStyles => {
-  //   return {
-  //     beer: { backgroundColor: "#5C2211" }
-  //   };
-  // }
+  private darkBeerStyles = (props: IBeerStyleProps): IBeerStyles => {
+    return {
+      beer: { backgroundColor: "#5C2211" }
+    };
+  }
 }
