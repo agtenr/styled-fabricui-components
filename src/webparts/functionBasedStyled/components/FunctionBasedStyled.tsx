@@ -22,7 +22,6 @@ export default class FunctionBasedStyled extends React.Component<IFunctionBasedS
             color: "blue"
           }
         ]
-
       };
       return chkStyles;
     };
@@ -48,7 +47,7 @@ export default class FunctionBasedStyled extends React.Component<IFunctionBasedS
           <PrimaryButton styles={buttonStyles()} text="Primary Button" />
         </div>
 
-        <div  className={styles.componentSection}>
+        <div className={styles.componentSection}>
           <Checkbox styles={checkboxStyles} label="Checkbox" />
         </div>
 
